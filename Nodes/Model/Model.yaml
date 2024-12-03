@@ -1,0 +1,20 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: Variable3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: ReportCreated
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../NetLogic/CreateReport/ReportCreated"

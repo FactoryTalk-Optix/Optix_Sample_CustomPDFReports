@@ -1,0 +1,755 @@
+Name: UI
+Type: UICategoryFolder
+Children:
+- Name: DefaultStyleSheet
+  Id: g=4374163142765538f201661fc9f2cb8d
+  Type: StyleSheet
+  Children:
+  - Name: Radius
+    Type: BaseDataVariableType
+    DataType: Size
+  - Name: InteractiveColorGradientPercent
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+      Children:
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+      Children:
+      - Name: IconUsesTextColor
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+      Children:
+      - Name: IndicatorSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 18.0
+- Name: MainWindow
+  Id: g=503758aab329c06fbed37e9b343b2fa6
+  Supertype: Window
+  Children:
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 760.0
+  - Name: Height
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 670.0
+  - Name: NavigationPanel1
+    Type: NavigationPanel
+    Children:
+    - Name: Panels
+      Type: BaseObjectType
+      Children:
+      - Name: Panel1
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Optix_Sample_CustomPDFReports/UI/Screens/CreateReport"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel2
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/Optix_Sample_CustomPDFReports/UI/Screens/ViewReport"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: CurrentPanel
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+    - Name: CurrentTabIndex
+      Type: BaseDataVariableType
+      DataType: Int32
+    - Class: Reference
+      Target: ns=5;i=1181
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=1183
+      Direction: Forward
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+- Name: WebPresentationEngine1
+  Type: ns=13;PresentationEngine
+  Children:
+  - Name: Protocol
+    Type: BaseDataVariableType
+    DataType: Protocol
+  - Name: IPAddress
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0.0.0.0"
+  - Name: Port
+    Type: BaseDataVariableType
+    DataType: UInt16
+    Value: 8080
+  - Name: StartWindow
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_CustomPDFReports/UI/MainWindow"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_CustomPDFReports/UI/DefaultStyleSheet"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: EnableVirtualKeyboard
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: StartingUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Optix_Sample_CustomPDFReports/Security/Users/Guest"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: Sessions
+    Type: BaseObjectType
+    Children:
+    - Name: Session1
+      Type: UISession
+      Children:
+      - Name: IsInteractive
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+        Value: true
+      - Name: User
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+      - Name: ActualLocaleId
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+      - Name: ActualLanguage
+        Type: BaseVariableType
+        DataType: LocaleId
+        ReferenceType: HasProperty
+      - Name: ActualMeasurementSystem
+        Type: BaseVariableType
+        DataType: MeasurementSystem
+        ReferenceType: HasProperty
+      - Name: TimeZoneOffset
+        Type: BaseVariableType
+        DataType: TimeZoneDataType
+        ReferenceType: HasProperty
+        AccessLevel: Read
+      - Name: MeasurementUnits
+        Type: BaseObjectType
+        Children:
+        - Name: Length
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Mass
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Temperature
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: TimeSpan
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Area
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Volume
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: ElectricalCurrentIntensity
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Frequency
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Force
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Pressure
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Density
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Speed
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Acceleration
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Power
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Energy
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: ElectricPotential
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: Torque
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: PlaneAngle
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: AngularSpeed
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: AngularAcceleration
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: VolumetricFlowRate
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+        - Name: MassFlowRate
+          Type: EUInformationType
+          DataType: EUInformation
+          ReferenceType: HasComponent
+          Children:
+          - Name: UnitId
+            Type: BaseVariableType
+            DataType: Int32
+            Value: -1
+          - Name: DisplayName
+            Type: BaseVariableType
+            DataType: LocalizedText
+          - Name: Description
+            Type: BaseVariableType
+            DataType: LocalizedText
+      - Name: Groups
+        Type: BaseObjectType
+      - Name: Roles
+        Type: BaseObjectType
+      - Name: Rights
+        Type: BaseObjectType
+      - Class: Reference
+        Target: ns=1;i=146
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=266
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=269
+        Direction: Forward
+      - Class: Reference
+        Target: ns=1;i=272
+        Direction: Forward
+      - Name: LoggedIn
+        Type: BaseVariableType
+        DataType: Boolean
+        ReferenceType: HasProperty
+        AccessLevel: Read
+      - Name: IsNative
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+      - Name: IsWeb
+        Type: BaseDataVariableType
+        DataType: Boolean
+        AccessLevel: Read
+      - Name: IpAddress
+        Type: BaseDataVariableType
+        DataType: String
+        AccessLevel: Read
+      - Name: StyleSheet
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: MaxNumberOfConnections
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 3
+- File: Screens/Screens.yaml

@@ -1,0 +1,16 @@
+﻿Key,en-US
+Timestamp,Timestamp
+Name,Name
+Message,Message
+Active,Active
+SourceName,Source Variable
+Acked,Acked
+Severity,Severity
+Confirmed,Confirmed
+Save,Save
+Delete,Delete
+RecipeApply,Recipe applied
+Apply,Apply
+Load,Load
+RecipeDeleted,Recipe deleted
+RecipeLoaded,Recipe loaded

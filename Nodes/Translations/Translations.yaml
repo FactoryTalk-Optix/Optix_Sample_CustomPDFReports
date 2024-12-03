@@ -1,0 +1,31 @@
+Name: Translations
+Type: TranslationsCategoryFolder
+Children:
+- Name: LocalizationDictionary1
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [16,2],
+    "Body": [
+     "","en-US",
+     "Timestamp","Timestamp",
+     "Name","Name",
+     "Message","Message",
+     "Active","Active",
+     "SourceName","Source Variable",
+     "Acked","Acked",
+     "Severity","Severity",
+     "Confirmed","Confirmed",
+     "Save","Save",
+     "Delete","Delete",
+     "RecipeApply","Recipe applied",
+     "Apply","Apply",
+     "Load","Load",
+     "RecipeDeleted","Recipe deleted",
+     "RecipeLoaded","Recipe loaded"
+    ]
+   }

@@ -1,0 +1,90 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: CreateReport
+  Id: g=c8f608d4ac75b90599e73ea683ff242d
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: RunCreatePDf
+  - Name: Header
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: ImageFile
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "testimage.jpg"
+      Children:
+      - Name: Width
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 150
+      - Name: Height
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 80
+    - Name: Title
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Test Title"
+    - Name: Information
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Report printed from EECM"
+  - Name: FontFamily
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "arial"
+  - Name: Table
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DataStore
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "EmbeddedDatabase1"
+    - Name: TableName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DataLogger1"
+    - Name: Query
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "SELECT Timestamp, Variable1, Variable2, Variable3 FROM DataLogger1 ORDER BY Timestamp ASC"
+    - Name: TableColumnAndDimension
+      Type: BaseDataVariableType
+      DataType: Int32
+      Children:
+      - Name: TimeStamp
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 50
+      - Name: Variable1
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 35
+      - Name: Variable2
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 35
+      - Name: Variable3
+        Type: BaseDataVariableType
+        DataType: Int32
+        Value: 35
+  - Name: Footer
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Report Print By EECM"
+    Children:
+    - Name: PageNumber
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+  - Name: FileName
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: "ns=18;%PROJECTDIR%/Report.pdf"
+  - Name: ReportCreated
+    Type: BaseDataVariableType
+    DataType: Boolean
