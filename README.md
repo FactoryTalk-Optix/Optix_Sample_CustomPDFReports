@@ -17,7 +17,7 @@ This application uses some external NuGet packages to create custom PDF reports,
 
 ## Testing
 
-This project has been tried on ARM devices such as `ASEM RMxx`, `OptixEdge`, `1756-CMEE` and more, where the graphical capabilities are not available and can't handle standard Optix reports
+This project has been tried on ARM devices such as `OptixEdge`, `1756-CMEE` and more, where the graphical capabilities are not available and can't handle standard Optix reports
 
 ## Disclaimer
 
