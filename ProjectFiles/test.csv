@@ -1,16 +1,3 @@
-﻿Key,en-US
-Timestamp,Timestamp
-Name,Name
-Message,Message
-Active,Active
-SourceName,Source Variable
-Acked,Acked
-Severity,Severity
-Confirmed,Confirmed
-Save,Save
-Delete,Delete
-RecipeApply,Recipe applied
-Apply,Apply
-Load,Load
-RecipeDeleted,Recipe deleted
-RecipeLoaded,Recipe loaded
+version https://git-lfs.github.com/spec/v1
+oid sha256:a5fff4730ec198d2ab873aecb1de11b19d913843959668c6e7d905f4079bfddd
+size 295
